@@ -38,9 +38,28 @@ class tringle: shape {
         return 0
     
     }}
+class square: shape{
+    var heght : Double
+    var width : Double
+    init (heght: Double , width : Double){
+        self.heght = heght
+        self.width = width
+        super.init()
+    }
+    override func area() -> Double {
+        return (heght*width)
+}
+    override func volume () -> Double{
+        0
+        
+    }
+}
+
+
+    
 //task 2
 struct Book {
-    var title : String? = " "
+ var title : String? = " "
     var author : String? = " "
     var page : Int = 0
     var price : Double = 0.0
